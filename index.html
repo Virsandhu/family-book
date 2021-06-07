@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Family book</title>
+  
+</head>
+<body style="text-align: center;background-color: darkturquoise;">
+        
+<h1>My Family</h1>
+<img src="family pic.jpg"
+  style="width: 600px; height: 600px; border-radius: 45px; border-color: rgb(230, 12, 219); "  id="imgupdate" >
+
+<h3 id="nameupdate"></h3>
+<button onclick="update()";>Next</button>
+
+
+
+    </body>
+    <script>
+      images_array =[ "papa.jpg", 
+  
+    
+      "mama.jpg" ,
+  
+      "zorawar.jpg",
+  
+      "vir.jpg",
+  
+      "max.jpg", 
+  
+      "polo.jpg"];
+
+  names_array = [ "Navjit Sandhu", "Seerath Sandhu", "Zorawar Sandhu",
+  "Vir Sandhu(myself)", "Max", "Polo"];
+  
+  var i = 0;
+  function update()
+  {
+    i++;
+  var numbers_of_family_member_in_array = 6
+  if (i > numbers_of_family_member_in_array )
+  {
+  i = 0;
+  }
+  var imgupdate = images_array[i];
+  var nameupdate = names_array[i];
+  document.getElementById("nameupdate").innerHTML = nameupdate; document.getElementById("imgupdate").src = imgupdate;
+  }
+  
+  
+  </script>
+    </html>
